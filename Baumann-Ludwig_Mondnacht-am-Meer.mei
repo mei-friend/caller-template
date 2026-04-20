@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://music-encoding.org/schema/5.1/mei-CMN.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://music-encoding.org/schema/5.1/mei-CMN.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
@@ -21,7 +21,7 @@
                <name xml:id="nbtjpo81">mei-friend</name>
                <p xml:id="p24vfb71">First edit by mei-friend 1.1.5, 14 May 2024.</p>
             </application>
-         </appInfo>
+         <application isodate="2026-04-20"><name>GitHub Action Scripts</name><p>Add system breaks</p></application></appInfo>
       </encodingDesc>
    </meiHead>
    <music xml:id="mm9bgqh1">
@@ -192,7 +192,6 @@
                      <tie xml:id="t1e0uwow" curvedir="above" endid="#n39kd5z" startid="#n1qhjjdf"/>
                      <tie xml:id="t7qrwj9" endid="#ndezl1q" startid="#nblwso6"/>
                   </measure>
-                  <sb xml:id="sda7c4s1" type="mscore-manual"/>
                   <measure xml:id="m1ve7egh" facs="#zone_01J46HF9ZM8XDRHWF1RFWNY9HP" n="3">
                      <staff xml:id="m3s1" n="1">
                         <layer xml:id="m3s1l1" n="1">
@@ -361,7 +360,6 @@
                      </supplied>
                      <tie xml:id="t1foib1x" endid="#nzhxhsr" startid="#nfz4h5c"/>
                   </measure>
-                  <sb xml:id="s4hlmyz2" type="mscore-manual"/>
                   <measure xml:id="m1eamxy" facs="#zone_01J46HF9ZPEM03Z4GXWT819JR4" n="5">
                      <staff xml:id="m5s1" n="1">
                         <layer xml:id="m5s1l1" n="1">
@@ -446,7 +444,7 @@
                      </supplied>
                      <tie xml:id="t1qgrb2y" endid="#n25n598" startid="#nzhxhsr"/>
                   </measure>
-                  <measure xml:id="meay5fl" facs="#zone_01J46HF9ZQ6NDC7E0QTJYM9W47" n="6">
+                  <sb/><measure xml:id="meay5fl" facs="#zone_01J46HF9ZQ6NDC7E0QTJYM9W47" n="6">
                      <staff xml:id="m6s1" n="1">
                         <layer xml:id="m6s1l1" n="1">
                            <note xml:id="n1biem2t" dots="1" dur="4" oct="5" pname="e">
@@ -523,7 +521,6 @@
                      </staff>
                      <tie xml:id="t16me3q6" endid="#n30jrno" startid="#n1biem2t"/>
                   </measure>
-                  <sb xml:id="s16xgyb1" type="mscore-manual"/>
                   <measure xml:id="m151zx4y" facs="#zone_01J46HF9ZQKAD47N08VDS2CF6R" n="7">
                      <staff xml:id="m7s1" n="1">
                         <layer xml:id="m7s1l1" n="1">
@@ -887,8 +884,7 @@
                      <tie xml:id="tpxrh3z" curvedir="below" endid="#n13ral6r" startid="#n1g8xsv6"/>
                      <tie xml:id="t1gid1nm" curvedir="below" endid="#no2buzj" startid="#nvi8sqw"/>
                   </measure>
-                  <sb xml:id="so8li571" type="mscore-manual"/>
-                  <measure xml:id="m1crmzk6" facs="#zone_01J46HF9ZSHYJN475YQPRMEYWQ" n="11">
+                  <sb/><measure xml:id="m1crmzk6" facs="#zone_01J46HF9ZSHYJN475YQPRMEYWQ" n="11">
                      <staff xml:id="m11s1" n="1">
                         <layer xml:id="m11s1l1" n="1">
                            <rest xml:id="m10097vd" dots="1" dur="2"/>
@@ -1069,7 +1065,6 @@
                      </staff>
                      <tie xml:id="tuyues" endid="#n1ftkyn5" startid="#n1ckjsm5"/>
                   </measure>
-                  <sb xml:id="s64lnbh" type="mscore-manual"/>
                   <measure xml:id="mm0knc0" facs="#zone_01J46HF9ZTP6RGVJ928Y1MPX1X" n="13">
                      <staff xml:id="m13s1" n="1">
                         <layer xml:id="m13s1l1" n="1">
@@ -1357,8 +1352,7 @@
                      <tie xml:id="tv2fsg31" endid="#n72qc9u" staff="1" startid="#n1hr1sst"/>
                      <slur xml:id="s0gfmm31" endid="#nkmv4rx" staff="1" startid="#n72qc9u"/>
                   </measure>
-                  <sb xml:id="szq6qqa" type="mscore-manual"/>
-                  <measure xml:id="mfqzsf5" facs="#zone_01J46HF9ZW8GWMJF2EDMXX2DHP" n="16">
+                  <sb/><measure xml:id="mfqzsf5" facs="#zone_01J46HF9ZW8GWMJF2EDMXX2DHP" n="16">
                      <staff xml:id="m16s1" n="1">
                         <layer xml:id="m16s1l1" n="1">
                            <beam xml:id="bclj9yo2">
@@ -1836,7 +1830,7 @@
                         <slur xml:id="stk1hly1" endid="#nkacpu5" staff="2" startid="#n1ntz5o0"/>
                      </reg>
                   </measure>
-                  <measure xml:id="mgl6fh3" facs="#zone_01J46HF9ZYMV5A79A8DBD2FQRZ" n="21">
+                  <sb/><measure xml:id="mgl6fh3" facs="#zone_01J46HF9ZYMV5A79A8DBD2FQRZ" n="21">
                      <staff xml:id="m21s1" n="1">
                         <layer xml:id="m21s1l1" n="1">
                            <note xml:id="n1scwee8" dots="1" dur="4" oct="4" pname="b">
@@ -1933,7 +1927,6 @@
                      <tie xml:id="tm9o4f8" endid="#ngq3q5m" startid="#n1ywo29t"/>
                      <tie xml:id="t1h9vjmx" endid="#ngdo0h9" startid="#n1oyesyj"/>
                   </measure>
-                  <sb xml:id="sg7obuv1" type="mscore-manual"/>
                   <measure xml:id="mv4ij13" facs="#zone_01J46HF9ZYCCRJB2DQ4T0YS8TA" n="22">
                      <staff xml:id="m22s1" n="1">
                         <layer xml:id="m22s1l1" n="1">
@@ -2188,7 +2181,6 @@
                      <tie xml:id="tc1jp8b" endid="#n1fyd3yv" startid="#n16hu1c3"/>
                      <slur xml:id="srvz8so2" endid="#n1q4kthj" staff="2" startid="#nofyrju"/>
                   </measure>
-                  <sb xml:id="slpcjj11" type="mscore-manual"/>
                   <measure xml:id="ml69jtv" facs="#zone_01J46HF9ZZHY83H91PJXCGVTE7" n="25">
                      <staff xml:id="m25s1" n="1">
                         <layer xml:id="m25s1l1" n="1">
@@ -2267,7 +2259,7 @@
                      </supplied>
                      <tie xml:id="t2lb4g2" endid="#nfp35tk" startid="#n1fyd3yv"/>
                   </measure>
-                  <measure xml:id="mvkzkuj" facs="#zone_01J46HF9ZZE1DGZ4QJKYNNXCDN" n="26">
+                  <sb/><measure xml:id="mvkzkuj" facs="#zone_01J46HF9ZZE1DGZ4QJKYNNXCDN" n="26">
                      <staff xml:id="m26s1" n="1">
                         <layer xml:id="m26s1l1" n="1">
                            <note xml:id="ni8ss0e" dots="1" dur="4" oct="5" pname="e">
@@ -2429,7 +2421,6 @@
                      <tie xml:id="t1u9imkm" endid="#n29fddj" startid="#n2q9ghn"/>
                      <slur xml:id="s1wbj6q1" endid="#ns6bkhp" staff="2" startid="#nmkauuk"/>
                   </measure>
-                  <sb xml:id="sk5ojec1" type="mscore-manual"/>
                   <measure xml:id="m1kbn46r" facs="#zone_01J46HFA004WC5X7MA05PTD2K9" n="28">
                      <staff xml:id="m28s1" n="1">
                         <layer xml:id="m28s1l1" n="1">
@@ -2697,7 +2688,7 @@
                      </staff>
                      <slur xml:id="s1gj1gzd" curvedir="above" endid="#nzbksff" startid="#nsmoz1y"/>
                   </measure>
-                  <pb xml:id="puaybhm2" facs="#surface_01J46HFA004AKAWPEMXRX00F1R" n="04"/>
+                  <sb/><pb xml:id="puaybhm2" facs="#surface_01J46HFA004AKAWPEMXRX00F1R" n="04"/>
                   <measure xml:id="mz22v07" facs="#zone_01J46HFA00TB7MQR9GEZ8RHR27" n="31">
                      <staff xml:id="m31s1" n="1">
                         <layer xml:id="m31s1l1" n="1">
@@ -2978,7 +2969,6 @@
                      <tie xml:id="t1irtj57" curvedir="above" endid="#n1qyqswq" startid="#n1mpk9rm"/>
                      <dir xml:id="dal1iqw1" place="above" staff="3" startid="#n14xos0y">l H</dir>
                   </measure>
-                  <sb xml:id="sx7ghci1" type="mscore-manual"/>
                   <measure xml:id="m1xgpg4s" facs="#zone_01J46HFA01HEGE47P20Y3A7K16" n="34">
                      <staff xml:id="m34s1" n="1">
                         <layer xml:id="m34s1l1" n="1">
@@ -3125,7 +3115,7 @@
                      <slur xml:id="smkux9h" endid="#n1y2hfew" staff="2" startid="#n44s3zb"/>
                      <slur xml:id="sgx1e921" endid="#nnhsep9" staff="2" startid="#n6mqs54"/>
                   </measure>
-                  <measure xml:id="mhfjc37" facs="#zone_01J46HFA01W1B3HJD857B3RWNZ" n="36">
+                  <sb/><measure xml:id="mhfjc37" facs="#zone_01J46HFA01W1B3HJD857B3RWNZ" n="36">
                      <staff xml:id="m36s1" n="1">
                         <layer xml:id="m36s1l1" n="1">
                            <note xml:id="nlgcxns" dots="1" dur="4" oct="5" pname="e"/>
@@ -3186,7 +3176,6 @@
                      <slur xml:id="sxsc1in1" endid="#n13i2ap3" staff="2" startid="#n1pm3e8b"/>
                      <slur xml:id="slryjzv2" endid="#nixdcnp" staff="2" startid="#ncoix0o"/>
                   </measure>
-                  <sb xml:id="s1olc4x2" type="mscore-manual"/>
                   <measure xml:id="mics1b7" facs="#zone_01J46HFA02SEFT87FVCVP98R7V" n="37">
                      <staff xml:id="m37s1" n="1">
                         <layer xml:id="m37s1l1" n="1">
@@ -3454,7 +3443,7 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
+               <sb/></section>
             </score>
          </mdiv>
       </body>
