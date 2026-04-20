@@ -25,65 +25,6 @@
       </encodingDesc>
    </meiHead>
    <music xml:id="mm9bgqh1">
-      <facsimile xml:id="fqyean2">
-         <surface xml:id="surface_01J46HF9ZHFCAXXRKM4J7X4VW9" lrx="1999" lry="2580" n="1" ulx="0" uly="0">
-            <graphic xml:id="graphic_01J46HF9ZH699QQC7PB9MGDD88" height="2581" target="img/Baumann-Ludwig_Mondnacht-am-Meer/01.jpg" width="2000"/>
-            <zone xml:id="zone_01J46HF9ZJRHWGJ7WCNPEYZG62" lrx="1036" lry="804" type="measure" ulx="127" uly="259"/>
-            <zone xml:id="zone_01J46HF9ZKYZJT3PQEPV3YY55E" lrx="1715" lry="803" type="measure" ulx="999" uly="277"/>
-            <zone xml:id="zone_01J46HF9ZM8XDRHWF1RFWNY9HP" lrx="1016" lry="1334" type="measure" ulx="142" uly="767"/>
-            <zone xml:id="zone_01J46HF9ZN4BHRRQ8Z5E760RJ9" lrx="1716" lry="1333" type="measure" ulx="983" uly="766"/>
-            <zone xml:id="zone_01J46HF9ZPEM03Z4GXWT819JR4" lrx="1003" lry="1867" type="measure" ulx="162" uly="1296"/>
-            <zone xml:id="zone_01J46HF9ZQ6NDC7E0QTJYM9W47" lrx="1705" lry="1856" type="measure" ulx="966" uly="1289"/>
-            <zone xml:id="zone_01J46HF9ZQKAD47N08VDS2CF6R" lrx="987" lry="2375" type="measure" ulx="165" uly="1828"/>
-            <zone xml:id="zone_01J46HF9ZR9J09QXR9ZCNRCRCY" lrx="1726" lry="2388" type="measure" ulx="962" uly="1815"/>
-         </surface>
-         <surface xml:id="surface_01J46HF9ZRDBFHWC48AG2HSEW8" lrx="1999" lry="2580" n="2" ulx="0" uly="0">
-            <graphic xml:id="graphic_01J46HF9ZRSAYJ6ACTTZAGDMS1" height="2581" target="img/Baumann-Ludwig_Mondnacht-am-Meer/02.jpg" width="2000"/>
-            <zone xml:id="zone_01J46HF9ZR5J0JD319BB6WAEHY" lrx="1005" lry="790" type="measure" ulx="238" uly="244"/>
-            <zone xml:id="zone_01J46HF9ZRWTDE1BBCZE6GQ4KG" lrx="1772" lry="803" type="measure" ulx="966" uly="261"/>
-            <zone xml:id="zone_01J46HF9ZSHYJN475YQPRMEYWQ" lrx="981" lry="1313" type="measure" ulx="234" uly="758"/>
-            <zone xml:id="zone_01J46HF9ZSXAJVTTFKA968NMF8" lrx="1618" lry="1322" type="measure" ulx="943" uly="769"/>
-            <zone xml:id="zone_01J46HF9ZTP6RGVJ928Y1MPX1X" lrx="893" lry="1856" type="measure" ulx="231" uly="1275"/>
-            <zone xml:id="zone_01J46HF9ZVEA44TQ3P3061C9GT" lrx="1341" lry="1857" type="measure" ulx="861" uly="1283"/>
-            <zone xml:id="zone_01J46HF9ZVANKESJ1EM8T7YGCP" lrx="1796" lry="1858" type="measure" ulx="1297" uly="1296"/>
-            <zone xml:id="zone_01J46HF9ZW8GWMJF2EDMXX2DHP" lrx="874" lry="2356" type="measure" ulx="234" uly="1815"/>
-            <zone xml:id="zone_01J46HF9ZWJJ74PHN00SDJX473" lrx="1268" lry="2364" type="measure" ulx="837" uly="1825"/>
-            <zone xml:id="zone_01J46HF9ZW6JGZJZEWJGRW7QF3" lrx="1803" lry="2368" type="measure" ulx="1240" uly="1831"/>
-         </surface>
-         <surface xml:id="surface_01J46HF9ZXYY5CQ07H7R7J3J90" lrx="1999" lry="2580" n="3" ulx="0" uly="0">
-            <graphic xml:id="graphic_01J46HF9ZX2RZ0YW4AZ4DJ6NAV" height="2581" target="img/Baumann-Ludwig_Mondnacht-am-Meer/03.jpg" width="2000"/>
-            <zone xml:id="zone_01J46HF9ZX0RG5YDC3ARDQ42ST" lrx="795" lry="761" type="measure" ulx="150" uly="239"/>
-            <zone xml:id="zone_01J46HF9ZX1KSY792SEJ8KKWZJ" lrx="1280" lry="785" type="measure" ulx="762" uly="244"/>
-            <zone xml:id="zone_01J46HF9ZYMV5A79A8DBD2FQRZ" lrx="1722" lry="784" type="measure" ulx="1249" uly="247"/>
-            <zone xml:id="zone_01J46HF9ZYCCRJB2DQ4T0YS8TA" lrx="793" lry="1296" type="measure" ulx="169" uly="794"/>
-            <zone xml:id="zone_01J46HF9ZZ5ZVBBTAXQWJSR3CW" lrx="1258" lry="1313" type="measure" ulx="810" uly="772"/>
-            <zone xml:id="zone_01J46HF9ZZ5N5S9MCY0BP69SME" lrx="1727" lry="1301" type="measure" ulx="1215" uly="788"/>
-            <zone xml:id="zone_01J46HF9ZZHY83H91PJXCGVTE7" lrx="791" lry="1819" type="measure" ulx="174" uly="1319"/>
-            <zone xml:id="zone_01J46HF9ZZE1DGZ4QJKYNNXCDN" lrx="1221" lry="1805" type="measure" ulx="739" uly="1316"/>
-            <zone xml:id="zone_01J46HF9ZZXXNA3Q7PV5N41TBT" lrx="1722" lry="1846" type="measure" ulx="1184" uly="1293"/>
-            <zone xml:id="zone_01J46HFA004WC5X7MA05PTD2K9" lrx="784" lry="2354" type="measure" ulx="169" uly="1850"/>
-            <zone xml:id="zone_01J46HFA008978WPVVY06WV6R2" lrx="1225" lry="2344" type="measure" ulx="749" uly="1855"/>
-            <zone xml:id="zone_01J46HFA00BH5SHJHJNN00KNMM" lrx="1708" lry="2339" type="measure" ulx="1195" uly="1820"/>
-         </surface>
-         <surface xml:id="surface_01J46HFA004AKAWPEMXRX00F1R" lrx="1999" lry="2580" n="4" ulx="0" uly="0">
-            <graphic xml:id="graphic_01J46HFA01WKSKR06ZM8VR2G09" height="2581" target="img/Baumann-Ludwig_Mondnacht-am-Meer/04.jpg" width="2000"/>
-            <zone xml:id="zone_01J46HFA00TB7MQR9GEZ8RHR27" lrx="872" lry="778" type="measure" ulx="255" uly="278"/>
-            <zone xml:id="zone_01J46HFA00ZRAG64HV3N5V627Z" lrx="1510" lry="790" type="measure" ulx="852" uly="241"/>
-            <zone xml:id="zone_01J46HFA00B6DNRH8WCH43RN7N" lrx="1813" lry="786" type="measure" ulx="1319" uly="246"/>
-            <zone xml:id="zone_01J46HFA01HEGE47P20Y3A7K16" lrx="833" lry="1318" type="measure" ulx="227" uly="797"/>
-            <zone xml:id="zone_01J46HFA01D3CZJ4468R617FET" lrx="1359" lry="1309" type="measure" ulx="781" uly="787"/>
-            <zone xml:id="zone_01J46HFA01W1B3HJD857B3RWNZ" lrx="1884" lry="1310" type="measure" ulx="1303" uly="801"/>
-            <zone xml:id="zone_01J46HFA02SEFT87FVCVP98R7V" lrx="1404" lry="1901" type="measure" ulx="801" uly="1352"/>
-            <zone xml:id="zone_01J46HFA02XBKQ789CVMZA1TF7" lrx="1725" lry="1889" type="measure" ulx="1366" uly="1347"/>
-            <zone xml:id="zone_01J46HFA02HX2VJMFQ22TN7TM8" lrx="1823" lry="1848" type="measure" ulx="1698" uly="1335"/>
-            <zone xml:id="zone_01J46HFA02RH62JF0BHN9HPJTM" lrx="1964" lry="1851" type="measure" ulx="1790" uly="1326"/>
-            <zone xml:id="zone_01J46HFA03WH9VJFSRQW611QB6" lrx="1734" lry="1872" type="measure" ulx="1340" uly="1351"/>
-            <zone xml:id="zone_01J46HFA032V16PC7A2YPY6CHX" lrx="1835" lry="1878" type="measure" ulx="1671" uly="1346"/>
-            <zone xml:id="zone_01J46HFA03XH0R6ZT5Q5KA84AA" lrx="1883" lry="1873" type="measure" ulx="1776" uly="1344"/>
-            <zone xml:id="zone_01J46HFA03S1TKNY69JY6XQ704" lrx="1939" lry="1864" type="measure" ulx="1834" uly="1341"/>
-            <zone xml:id="zone_01J46HFA04WMNN32549XWMQF75" lrx="954" lry="2390" type="measure" ulx="251" uly="1852"/>
-         </surface>
-      </facsimile>
       <body xml:id="bn27tdp2">
          <mdiv xml:id="m81oac9">
             <score xml:id="sj5zskn2">
