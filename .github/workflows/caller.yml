@@ -1,10 +1,10 @@
-name: Run E-LAUTE automation
+name: Call automation workflow
 
 on:
   workflow_dispatch:
     inputs:
       workpackage_id:
-        description: "The id of the workpackage you want to run."
+        description: "The id of the work package you want to run."
         required: true
         type: string
       filepath:
@@ -12,7 +12,7 @@ on:
         required: true
         type: string
       addargs: 
-        description: "Additional arguments required by the workpackage"
+        description: "Additional arguments required by the work package"
         required: false
         type: string
       commit_message:
@@ -22,7 +22,7 @@ on:
 
 jobs:
   call-shared:
-    uses: e-laute/E-LAUTE_GH_Actions/.github/workflows/run_coordinator.yml@main
+    uses: mei-friend/automation/.github/workflows/central.yml@main
     with:
       workpackage_id: ${{ github.event.inputs.workpackage_id }}
       filepath: ${{ github.event.inputs.filepath }}
