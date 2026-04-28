@@ -1,9 +1,19 @@
 # Demo encodings and .yml-file for automation in mei-friend
-Template for a caller repository used to store .mei-files.
 
-This repository is used to demonstrate the setup of a GitHub-Repository for the use with automation via GitHub-Actions in mei-friend. 
-It includes the following encodings:
+This repository is used to demonstrate the setup of a GitHub-Repository for the use with automation via GitHub-Actions in mei-friend.
+
+Find the full documentation for the use of automation in mei-friend here: [https://mei-friend.github.io/docs/advanced/automation](https://mei-friend.github.io/docs/advanced/automation).
+
+
+The file `.github/workflows/caller.yml` contains the configuration for the connection to the central repository which stores the scripts that should be applied to the music encodings.
+It is used to foward the workpackage_id, the filepath, parameters supplied by the user and an optional commit message to the central repository.
+
+
+
+To demonstrate the use of automation in mei-friend includes the following music encodings:
 
     "Mondnacht am Meer" for voice and piano by Ludwig Baumann, held in Badische Landesbibliothek Karlsruhe. 3 Lieder - Mus. Hs. 1324 : V, pf / Ludwig Baumann. [S.l.], 18XX. Badische Landesbibliothek Karlsruhe. , Mus. Hs. 1324 https://nbn-resolving.org/urn:nbn:de:bsz:31-57896 / License: CC BY-SA (4.0). Encoding by @annplaksin.
 
-    6 Variations on "Nel cor più non mi sento" (WoO 70) by Ludwig van Beethoven, Breitkopf und Härtel edition, 1862–90. Plate B.168.. License: CC-BY 4.0. Encoding by @wergo.
+    6 Variations on "Nel cor più non mi sento" (WoO 70) by Ludwig van Beethoven, Breitkopf und Härtel edition, 1862-90. Plate B.168.. License: CC-BY 4.0. Encoding by @wergo.
+
+
