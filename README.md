@@ -2,7 +2,7 @@
 
 This is a **GitHub repository template** for setting up a caller repository that works with [mei-friend](https://mei-friend.github.io)'s GitHub Actions automation.
 
-To use it, click **"Use this template"** on GitHub to create your own repository — do not edit this template directly. Then add your MEI files and trigger work packages from mei-friend.
+To use it, click **"Use this template"** on GitHub to create your own repository — do not fork and edit this template directly. Then add your MEI files and trigger work packages from mei-friend.
 
 For the full documentation, see [Automation in mei-friend](https://mei-friend.github.io/docs/advanced/automation/).
 
@@ -10,10 +10,11 @@ For the full documentation, see [Automation in mei-friend](https://mei-friend.gi
 
 ## Role in the automation architecture
 
-A caller repository is the user's own GitHub repository where MEI files are stored and versioned. It contains a single thin workflow file (`.github/workflows/caller.yml`) that:
+A caller repository is the user's own GitHub repository where MEI files are stored and versioned. It contains a single small workflow file (`.github/workflows/caller.yml`) that:
 
 1. Receives a `workflow_dispatch` event from mei-friend (sent via the GitHub API when the user clicks **"Run workflow"** in the GitHub Actions panel).
-2. Forwards the event — together with the work package ID, file path, parameters, and commit message — to a **central repository** via a `uses:` reference (a reusable workflow invocation).
+2. Forwards the event — together with the work package ID, file path, parameters, and commit message — to a **central repository**.
+ <!-- via a `uses:` reference (a reusable workflow invocation). -->
 3. The central repository runs the requested processing on the file and commits any results back to this caller repository.
 
 By default, `caller.yml` points to [`mei-friend/automation`](https://github.com/mei-friend/automation), the generic central repository. It can be re-pointed to any other central repository (e.g. a project-specific one such as [E-LAUTE](https://github.com/e-laute/E-LAUTE_GH_Actions)) — see [Switching central repository](#switching-central-repository) below.
@@ -49,7 +50,7 @@ To use a different central repository, edit that `uses:` line — for example, t
 ```yaml
 jobs:
   call-shared:
-    uses: e-laute/E-LAUTE_GH_Actions/.github/workflows/run_coordinator.yml@main
+    uses: e-laute/automation/.github/workflows/run_coordinator.yml@main
 ```
 
 The receiving workflow in the central repository must accept the same input structure that `caller.yml` sends; if you target a custom central repo with a different input schema, `caller.yml` must be adjusted accordingly.
