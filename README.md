@@ -1,4 +1,4 @@
-# mei-friend caller template
+# mei-friend automation setup - caller template
 
 This is a **GitHub repository template** for setting up a caller repository that works with [mei-friend](https://mei-friend.github.io)'s GitHub Actions automation.
 
