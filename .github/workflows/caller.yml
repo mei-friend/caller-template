@@ -11,9 +11,13 @@ on:
         description: "MEI file you want to change."
         required: true
         type: string
-      addargs: 
-        description: "Additional arguments required by the work package"
+      parameters: 
+        description: "Additional parameters required by the work package."
         required: false
+        type: string
+      workpackage_json:
+        description: "The selected work package from the json as a string."
+        required: true
         type: string
       commit_message:
         description: "Commit message added by mei-friend or manually when dispatching"
@@ -29,6 +33,7 @@ jobs:
     with:
       workpackage_id: ${{ github.event.inputs.workpackage_id }}
       filepath: ${{ github.event.inputs.filepath }}
-      addargs: ${{ github.event.inputs.addargs }}
+      parameters: ${{ github.event.inputs.parameters }}
+      workpackage_json: ${{github.event.inputs.workpackage_json}}
       commit_message: ${{ github.event.inputs.commit_message }}
       
