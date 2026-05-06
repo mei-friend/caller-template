@@ -3,6 +3,10 @@ name: Call automation workflow
 on:
   workflow_dispatch:
     inputs:
+      central_repository:
+        description: "The central repository that should be used."
+        required: true
+        type: string
       workpackage_id:
         description: "The id of the work package you want to run."
         required: true
@@ -11,7 +15,7 @@ on:
         description: "MEI file you want to change."
         required: true
         type: string
-      parameters: 
+      parameters:
         description: "Additional parameters required by the work package."
         required: false
         type: string
@@ -24,16 +28,15 @@ on:
         required: true
         type: string
 
-permissions: 
+permissions:
   contents: write
 
 jobs:
   call-shared:
-    uses: mei-friend/automation/.github/workflows/central.yml@main
+    uses: ${{ github.event.inputs.central_repository }} # IDE may not resolve this, but it will work when the workflow is triggered via mei-friend
     with:
       workpackage_id: ${{ github.event.inputs.workpackage_id }}
       filepath: ${{ github.event.inputs.filepath }}
       parameters: ${{ github.event.inputs.parameters }}
-      workpackage_json: ${{github.event.inputs.workpackage_json}}
+      workpackage_json: ${{ github.event.inputs.workpackage_json }}
       commit_message: ${{ github.event.inputs.commit_message }}
-      
