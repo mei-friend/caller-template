@@ -12,12 +12,12 @@ For the full documentation, see [Automation in mei-friend](https://mei-friend.gi
 
 A caller repository is the user's own GitHub repository where MEI files are stored and versioned. It contains a single small workflow file (`.github/workflows/caller.yml`) that:
 
-1. Receives a `workflow_dispatch` event from mei-friend (sent via the GitHub API when the user clicks **"Run workflow"** in the GitHub Actions panel).
-2. Forwards the event — together with the work package ID, file path, parameters, and commit message — to a **central repository**.
-<!-- via a `uses:` reference (a reusable workflow invocation). -->
-3. The central repository runs the requested processing on the file and commits any results back to this caller repository.
+1. Receives a `workflow_dispatch` event from mei-friend (sent via the GitHub API when the user triggers a work package).
+2. Checks out both this caller repository and the specified **central repository** (at the specified branch).
+3. Runs the automation script from the central repository against the MEI file in this repository.
+4. Commits any results back to this caller repository.
 
-By default, `caller.yml` points to [`mei-friend/automation`](https://github.com/mei-friend/automation), the generic central repository. It can be re-pointed to any other central repository (e.g. a project-specific one such as [E-LAUTE](https://github.com/e-laute/automation)) — see [Switching central repository](#switching-central-repository) below.
+The central repository, branch, and script path are passed as inputs with each dispatch — meaning different work packages can point to different central repositories or branches without any changes to `caller.yml`.
 
 ---
 
@@ -37,23 +37,22 @@ You need write access to the caller repository so that processing results can be
 
 ## Switching central repository
 
-`.github/workflows/caller.yml` invokes the central repository on this line:
+Each work package definition in the JSON configuration specifies which central repository to use via three fields:
 
-```yaml
-jobs:
-  call-shared:
-    uses: mei-friend/automation/.github/workflows/central.yml@main
+```json
+{
+  "central_repository": "mei-friend/automation",
+  "branch": "main",
+  "automation": "automation/run_automation.sh",
+  "work_packages": [...]
+}
 ```
 
-To use a different central repository, edit that `uses:` line — for example, to use the E-LAUTE central repository:
+- **`central_repository`** — the `owner/repo` of the repository containing the automation logic.
+- **`branch`** — the branch of that repository to check out.
+- **`automation`** — the path to the entry-point script within that repository.
 
-```yaml
-jobs:
-  call-shared:
-    uses: e-laute/automation/.github/workflows/run_coordinator.yml@main
-```
-
-The receiving workflow in the central repository must accept the same input structure that `caller.yml` sends; if you target a custom central repo with a different input schema, `caller.yml` must be adjusted accordingly.
+mei-friend reads these fields from the work package and passes them as inputs when dispatching `caller.yml`. To point to a different central repository (e.g. a project-specific one), update these fields in the work package JSON — no changes to `caller.yml` are needed.
 
 See [Setting up your own central repository](https://mei-friend.github.io/docs/advanced/automation/#setting-up-your-own-central-repository) for the full setup.
 
