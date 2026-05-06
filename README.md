@@ -14,10 +14,10 @@ A caller repository is the user's own GitHub repository where MEI files are stor
 
 1. Receives a `workflow_dispatch` event from mei-friend (sent via the GitHub API when the user clicks **"Run workflow"** in the GitHub Actions panel).
 2. Forwards the event — together with the work package ID, file path, parameters, and commit message — to a **central repository**.
- <!-- via a `uses:` reference (a reusable workflow invocation). -->
+<!-- via a `uses:` reference (a reusable workflow invocation). -->
 3. The central repository runs the requested processing on the file and commits any results back to this caller repository.
 
-By default, `caller.yml` points to [`mei-friend/automation`](https://github.com/mei-friend/automation), the generic central repository. It can be re-pointed to any other central repository (e.g. a project-specific one such as [E-LAUTE](https://github.com/e-laute/E-LAUTE_GH_Actions)) — see [Switching central repository](#switching-central-repository) below.
+By default, `caller.yml` points to [`mei-friend/automation`](https://github.com/mei-friend/automation), the generic central repository. It can be re-pointed to any other central repository (e.g. a project-specific one such as [E-LAUTE](https://github.com/e-laute/automation)) — see [Switching central repository](#switching-central-repository) below.
 
 ---
 
@@ -63,5 +63,5 @@ See [Setting up your own central repository](https://mei-friend.github.io/docs/a
 
 The template ships with two MEI files for testing the automation flow without having to upload your own data:
 
-- **"Mondnacht am Meer"** for voice and piano by Ludwig Baumann, held in Badische Landesbibliothek Karlsruhe. *3 Lieder — Mus. Hs. 1324: V, pf / Ludwig Baumann.* [S.l.], 18XX. Badische Landesbibliothek Karlsruhe, Mus. Hs. 1324. <https://nbn-resolving.org/urn:nbn:de:bsz:31-57896> — License: CC BY-SA 4.0. Encoding by [@annplaksin](https://github.com/annplaksin).
+- **"Mondnacht am Meer"** for voice and piano by Ludwig Baumann, held in Badische Landesbibliothek Karlsruhe. _3 Lieder — Mus. Hs. 1324: V, pf / Ludwig Baumann._ [S.l.], 18XX. Badische Landesbibliothek Karlsruhe, Mus. Hs. 1324. <https://nbn-resolving.org/urn:nbn:de:bsz:31-57896> — License: CC BY-SA 4.0. Encoding by [@annplaksin](https://github.com/annplaksin).
 - **6 Variations on "Nel cor più non mi sento"** (WoO 70) by Ludwig van Beethoven, Breitkopf und Härtel edition, 1862–90, plate B.168. License: CC BY 4.0. Encoding by [@wergo](https://github.com/wergo).
