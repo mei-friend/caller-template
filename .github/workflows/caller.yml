@@ -33,7 +33,7 @@ permissions:
 
 jobs:
   call-shared:
-    uses: ${{ github.event.inputs.central_repository }} # IDE may not resolve this, but it will work when the workflow is triggered via mei-friend
+    uses: ${{ inputs.central_repository }}
     with:
       workpackage_id: ${{ github.event.inputs.workpackage_id }}
       filepath: ${{ github.event.inputs.filepath }}
