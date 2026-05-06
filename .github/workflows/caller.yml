@@ -40,10 +40,17 @@ jobs:
         with:
           path: caller-repo
 
+      - name: Parse workpackage JSON
+        id: parse
+        run: |
+          echo "branch=$(echo '${{ github.event.inputs.workpackage_json }}' | jq -r '.branch')" >> $GITHUB_OUTPUT
+          echo "automation=$(echo '${{ github.event.inputs.workpackage_json }}' | jq -r '.automation')" >> $GITHUB_OUTPUT
+
       - name: Checkout central repository
         uses: actions/checkout@v6
         with:
           repository: ${{ github.event.inputs.central_repository }}
+          ref: ${{ steps.parse.outputs.branch }}
           path: central-repo
 
       - name: Execute central logic
@@ -53,8 +60,8 @@ jobs:
           filepath: ${{ github.event.inputs.filepath }}
           parameters: ${{ github.event.inputs.parameters }}
         run: |
-          chmod +x ./central-repo/automation/run_automation.sh
-          ./central-repo/automation/run_automation.sh
+          chmod +x ./central-repo/${{ steps.parse.outputs.automation }}
+          ./central-repo/${{ steps.parse.outputs.automation }}
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
