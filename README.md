@@ -26,35 +26,14 @@ The central repository, branch, and script path are passed as inputs with each d
 1. Click **"Use this template"** on this repository's GitHub page to create your own caller repository.
 2. Add your MEI files to it (or keep the demo files for testing).
 3. In mei-friend, open **Settings > mei-friend > Use GitHub Actions** and check **"Show available GitHub Actions"**.
-4. Paste the URL of a JSON work package definition into the **"Custom configuration"** field. For testing, use:
+4. Paste the URL of a JSON work package definition into the **"Work package definition"** field. For testing, use:
    `https://raw.githubusercontent.com/mei-friend/automation/refs/heads/main/work_packages.json`
 5. Log in to GitHub in mei-friend and open a file from your caller repository.
-6. From the GitHub menu, click **"GitHub Actions: Call automation workflow"**, choose a work package, fill in any parameters, and click **"Run workflow"**.
+6. From the GitHub menu, click **"GitHub Actions: Call work package workflow"**, choose a work package from the dropdown in the GitHub Actions panel, fill in any parameters, and click **"Run workflow"**.
 
 You need write access to the caller repository so that processing results can be committed back.
 
----
-
-## Switching central repository
-
-Each work package definition in the JSON configuration specifies which central repository to use via three fields:
-
-```json
-{
-  "central_repository": "mei-friend/automation",
-  "branch": "main",
-  "automation": "automation/run_automation.sh",
-  "work_packages": [...]
-}
-```
-
-- **`central_repository`** — the `owner/repo` of the repository containing the automation logic.
-- **`branch`** — the branch of that repository to check out.
-- **`automation`** — the path to the entry-point script within that repository.
-
-mei-friend reads these fields from the work package and passes them as inputs when dispatching `caller.yml`. To point to a different central repository (e.g. a project-specific one), update these fields in the work package JSON — no changes to `caller.yml` are needed.
-
-See [Setting up your own central repository](https://mei-friend.github.io/docs/advanced/automation/#setting-up-your-own-central-repository) for the full setup.
+For a more detailed walkthrough, see [Step-by-Step instructons](https://mei-friend.github.io/docs/advanced/automation/#step-by-step-instructions) in the mei-friend documentation.
 
 ---
 
