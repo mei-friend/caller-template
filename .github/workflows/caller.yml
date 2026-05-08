@@ -10,11 +10,11 @@ on:
         required: true
         type: string
       branch:
-        description: "Branch of the central repository to use."
+        description: "Branch of the central repository to use (e.g., main)."
         required: true
         type: string
       automation_path:
-        description: "Path to the automation script within the central repository (e.g., automation/run_automation.sh)"
+        description: "Path to the automation script within the central repository (e.g., run_automation.sh)."
         required: true
         type: string
       workpackage_id:
