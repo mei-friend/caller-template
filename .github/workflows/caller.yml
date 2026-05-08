@@ -13,7 +13,7 @@ on:
         description: "Branch of the central repository to use."
         required: true
         type: string
-      automation:
+      automation_path:
         description: "Path to the automation script within the central repository (e.g., automation/run_automation.sh)"
         required: true
         type: string
@@ -64,8 +64,8 @@ jobs:
           filepath: ${{ github.event.inputs.filepath }}
           parameters: ${{ github.event.inputs.parameters }}
         run: |
-          chmod +x ./central-repo/${{ github.event.inputs.automation }}
-          ./central-repo/${{ github.event.inputs.automation }}
+          chmod +x ./central-repo/${{ github.event.inputs.automation_path }}
+          ./central-repo/${{ github.event.inputs.automation_path }}
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
