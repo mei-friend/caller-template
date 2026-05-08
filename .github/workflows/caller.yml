@@ -1,4 +1,6 @@
 name: Call automation workflow
+env:
+  mei-friend: true
 
 on:
   workflow_dispatch:
