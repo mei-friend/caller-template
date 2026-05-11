@@ -1,14 +1,12 @@
 # mei-friend automation setup - caller template
 
-This is a **GitHub repository template** for setting up a caller repository that works with [mei-friend](https://mei-friend.github.io)'s GitHub Actions automation.
+This is a **GitHub repository template** for setting up a caller repository that works with [mei-friend](https://mei-friend.github.io)'s GitHub Actions automation. For the full documentation, see [Automation in mei-friend](https://mei-friend.github.io/docs/advanced/automation/).
 
-To use it, click **"Use this template"** on GitHub to create your own repository — do not fork and edit this template directly. Then add your MEI files and trigger work packages from mei-friend.
-
-For the full documentation, see [Automation in mei-friend](https://mei-friend.github.io/docs/advanced/automation/).
+To use the template, click **"Use this template"** on GitHub to create your own repository — do not fork and edit this template directly. Add your MEI files to your repository and trigger work packages from mei-friend's GitHub Actions panel.
 
 ---
 
-## Role in the automation architecture
+## Role in the automation architecture of mei-friend
 
 A caller repository is the user's own GitHub repository where MEI files are stored and versioned. It contains a single small workflow file (`.github/workflows/caller.yml`) that:
 
@@ -21,7 +19,7 @@ The central repository, branch, and script path are passed as inputs with each d
 
 ---
 
-## Quick start
+## Step-by-step instructions for setting up a caller repository
 
 1. Click **"Use this template"** on this repository's GitHub page to create your own caller repository.
 2. Add your MEI files to it (or keep the demo files for testing).
